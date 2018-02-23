@@ -1,28 +1,3 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
 # Created by .ignore support plugin (hsz.mobi)
 ### Eclipse template
 
@@ -90,6 +65,7 @@ nbdist/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
+.idea/inspectionProfiles/
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
