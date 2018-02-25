@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title th:text="${title}"></title>
+    <script src="/webjars/jquery/4.0.0-1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.0.0-1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/4.0.0-1/css/bootstrap.min.css"/>
 </head>
 <body>
-    <h1 th:text="${title}"></h1>
-    <table>
+<h1 th:text="${title}"></h1>
+<table class="table">
+    <thead>
+    <tr>
         <th>User Name</th>
-        <tr th:each="user : ${users}">
-            <td th:text="${user.firstName} +' ' + ${user.lastName}"></td>
-        </tr>
-    </table>
+    </tr>
+
+    </thead>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.firstName} +' ' + ${user.lastName}"></td>
+    </tr>
+</table>
 </body>
 </html>
